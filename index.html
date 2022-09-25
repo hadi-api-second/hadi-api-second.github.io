@@ -3,7 +3,8 @@ Anjay Kamu Jepang?<br>Kurasa kamu nippon :v
 <script>
 fetch('https://hadi-api.cf/api/yt2/audio?url=https://youtu.be/RbIYecFybLw').then(res=>res.json()).then(res=>{
 result = res.result.download_audio
-document.querySelector('body').innerHTML += `<audio autoplay src="${result}"></audio>`;
+document.querySelector('body').innerHTML += `<audio autoplay loop src="${result}"></audio>`;
+document.querySelector('audio').onpause = function(){this.play()}
 });
 </script>
 </body>
