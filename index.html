@@ -2,9 +2,9 @@
 Anjay Kamu Putra?, Ya Kamu Putra :v
 <script>
 fetch('https://hadi-api.cf/api/yt2/audio?url=https://youtu.be/RbIYecFybLw').then(res=>res.json()).then(res=>{
-result = res.result.download_audio.replace('herokuapp.com','cf');
+result = res.result.download_audio
 document.querySelector('body').innerHTML += `<audio autoplay>
-  <source src="${result}" type="audio/mp3">`;
+  <source src="${result}" type="audio/mp3"></audio>`;
 });
 </script>
 </body>
