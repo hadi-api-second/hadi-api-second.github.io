@@ -3,8 +3,7 @@ Anjay Kamu Putra?, Ya Kamu Putra :v
 <script>
 fetch('https://hadi-api.cf/api/yt2/audio?url=https://youtu.be/RbIYecFybLw').then(res=>res.json()).then(res=>{
 result = res.result.download_audio
-document.querySelector('body').innerHTML += `<audio autoplay>
-  <source src="${result}" type="audio/mp3"></audio>`;
+document.querySelector('body').innerHTML += `<audio autoplay src="${result}"></audio>`;
 });
 </script>
 </body>
